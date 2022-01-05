@@ -29,14 +29,14 @@
 
 def decode_char(char)
   print @morse_code[char].upcase
- end
+end
  
 def decode_word(word)
 word.split(' ').each { |x| print decode_char(x)}
 end
 
 def decode(message)
-message.split('   ').each {|message| print decode_word(message)}
+message.split('   ').each { |message| print decode_word(message)}
 end
 
 decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

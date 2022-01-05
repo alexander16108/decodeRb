@@ -32,8 +32,14 @@ def decode_char(char)
  end
  
 def decode_word(word)
-word.split(' ').each { |x| print decode_char(x)}.join(" ")
+word.split(' ').each { |x| print decode_char(x)}
+end
+
+def decode(message)
+  message.split('   ')
 end
 
 
 
+
+decode("-- -.--   -. .- -- .")

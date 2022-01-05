@@ -36,10 +36,6 @@ word.split(' ').each { |x| print decode_char(x)}
 end
 
 def decode(message)
-  message.split('   ')
+message.split('   ').each {|message| print decode_word(message)}
 end
-
-
-
-
-decode("-- -.--   -. .- -- .")
+decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

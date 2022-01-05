@@ -38,4 +38,5 @@ end
 def decode(message)
 message.split('   ').each {|message| print decode_word(message)}
 end
+
 decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")

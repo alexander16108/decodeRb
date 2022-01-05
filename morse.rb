@@ -28,8 +28,15 @@
 }
 
 def decode_char(char)
-  puts @morse_code[char].upcase
- end
- 
- decode_char(".-")
+  print @morse_code[char].upcase
+end
 
+def decode_word(word)
+  word.split.each { |x| print decode_char(x) }
+end
+
+def decode(message)
+  message.split('   ').each { |msg| print decode_word(msg) }
+end
+
+decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
